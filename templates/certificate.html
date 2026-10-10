@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Certificate</title>
+  <style>
+    body { font-family: Georgia, serif; text-align: center; }
+    .certificate { border: 10px double #2c5282; width: 800px; margin: 40px auto; padding: 50px; }
+    h1 { font-size: 42px; color: #2c5282; }
+    .name { font-size: 34px; margin: 20px 0; border-bottom: 2px solid #999; display: inline-block; padding: 0 30px; }
+    .footer { display: flex; justify-content: space-between; margin-top: 60px; }
+  </style>
+</head>
+<body>
+  <div class="certificate">
+    <h1>Certificate of Participation</h1>
+    <p>This is to certify that</p>
+    <div class="name">{{ name }}</div>
+    <p>Roll No: {{ roll }}</p>
+    <p>has successfully participated in the project.</p>
+    <div class="footer">
+      <div>Date: {{ today }}</div>
+      <div>Signature<br>(coming later)</div>
+    </div>
+  </div>
+</body>
+</html>
